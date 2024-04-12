@@ -801,13 +801,17 @@
     right: -10px;
     rotate: -5deg;
   }
+  .participants {
+    margin-bottom: 176px;
+    gap: 40px;
+  }
   .participants__title {
     font-size: 36px;
     line-height: 110%;
   }
   .participants__blockBtnAndCounter {
     position: absolute;
-    bottom: -100px;
+    bottom: -75px;
     left: 123px;
   }
   .participants__sliderBtn {
@@ -823,6 +827,9 @@
   }
   .participants__sliderNext {
     padding-left: 3px;
+  }
+  .participants__totalSlide::before {
+    content: "/ ";
   }
   .participants__slideContainer {
     width: 335px;
@@ -840,5 +847,9 @@
   .footer {
     opacity: 1;
     height: 214px;
+  }
+  .footer__alertText {
+    padding: 40px 0 60px;
+    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */

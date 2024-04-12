@@ -356,6 +356,8 @@
     }
 
     .participants {
+        margin-bottom: 176px;
+        gap: 40px;
         &__title {
             font-size: 36px;
             line-height: 110%;
@@ -363,7 +365,7 @@
 
         &__blockBtnAndCounter {
             position: absolute;
-            bottom: -100px;
+            bottom: -75px;
             left: 123px;
         }
 
@@ -384,7 +386,9 @@
         &__sliderNext {
             padding-left: 3px;
         }
-
+        &__totalSlide::before {
+            content: '/ ';
+        }
         &__slideContainer {
             width: 335px;
         }
@@ -406,5 +410,10 @@
     .footer {
         opacity: 1;
         height: 214px;
+        &__alertText {
+            padding: 40px 0 60px;
+            box-sizing: border-box;
+
+        }
     }
 }
