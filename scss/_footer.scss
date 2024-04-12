@@ -1,0 +1,21 @@
+.footer {
+    width: 1366px;
+    height: 150px;
+
+    background: #e9ded4;
+    opacity: 0.11;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__alertText {
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #313131;
+
+        opacity: 0.6;
+    }
+}

@@ -1,0 +1,123 @@
+.supportIdea {
+    margin-top: 89px;
+
+    &__titleBlock {
+        display: flex;
+        gap: 64px;
+
+        align-items: center;
+        margin-bottom: 36px;
+    }
+
+    &__titleText {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 135%;
+        text-transform: uppercase;
+        color: #313131;
+    }
+    &__titleText_widthBottom{
+        width: 680px;
+    }
+    &__imagePhone {
+        display: none;
+    }
+
+    &__titleText_red {
+        font-weight: 700;
+        color: #f54932;
+    }
+
+    &__blockBottom {
+        display: flex;
+        justify-content: flex-end;
+
+        position: relative;
+    }
+
+    &__imagePosition {
+        width: 524px;
+        height: 588px;
+
+        position: absolute;
+
+        left: -25px;
+    }
+
+    &__rightBlock {
+        padding-top: 28px;
+        width: 704px;
+    }
+
+    &__informationTable {
+        margin-top: 60px;
+        border-spacing: 0;
+    }
+
+    &__lineName {
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #313131;
+
+        opacity: 0.7;
+
+        padding: 16px 20px 16px 0;
+        box-sizing: border-box;
+        border-bottom: 1px solid #d0d0d0;
+        border-top: none;
+
+        white-space: nowrap
+    }
+
+    &__lineName_first {
+        padding: 0 16px 16px 0;
+    }
+
+    &__lineName_last {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    &__lineInformation {
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: #313131;
+
+        padding: 16px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #d0d0d0;
+        border-left: 1px solid #d0d0d0;
+
+        width: 398px;
+    }
+
+    &__lineInformation_first {
+        padding: 0 0 16px 16px;
+    }
+
+    &__lineInformation_last {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    &__strikethrough {
+        text-decoration: line-through;
+        text-decoration-color: #f54932;
+        padding-right: 12px;
+    }
+
+    &__linkToAdministration {
+        margin-top: 45px;
+
+        font-family: 'Golos Text', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+
+    }
+}

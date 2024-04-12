@@ -1,0 +1,53 @@
+@import '../scss/components/fonts';
+@import '../scss/vars/var';
+
+.runningLine {
+    --gap: 30px;
+    --calc: calc(-100% - var(--gap));
+    overflow: hidden;
+    padding: 18px 0;
+    background: #f54932;
+    width: 100%;
+
+    &__marquee {
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+        transform: translate3d(0, 0, 0);
+        overflow: hidden;
+        user-select: none;
+
+    }
+
+    &__marqueeContent {
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+        will-change: transform;
+        counter-reset: item;
+        animation: scroll 50s linear infinite;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 110%;
+        text-transform: uppercase;
+        text-align: right;
+        color: #fff;
+
+        width: max-content;
+        white-space: nowrap;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(var(--calc));
+        }
+    }
+}
+

@@ -1,0 +1,100 @@
+.heading {
+    height: 700px;
+    position: relative;
+
+    &__containerHeading {
+        position: absolute;
+        top: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 542px;
+        margin-top: 26px;
+    }
+
+    &__titleInHeading {
+        margin: 62px 0 24px;
+
+        font-family: "Merriweather", serif;
+        text-transform: uppercase;
+        font-size: 60px;
+        color: #313131;
+        font-weight: 400;
+        line-height: 110%;
+    }
+
+    &__titleInHeading_center {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__titleInHeading_end {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__textContribution {
+        font-family: "Golos Text", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        color: #313131;
+    }
+    &__blockWithBtn {
+        margin-top: 40px;
+        display: flex;
+        gap: 16px;
+    }
+
+    &__supportIdeaBtn {
+        border-radius: 66px;
+        min-width: 263px;
+        height: 72px;
+        background: #1f1f1f;
+        border: 2px solid #1f1f1f;
+        padding: 0 49px;
+
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #fff;
+        white-space: break-spaces;
+
+        transition: all 0.6s ease;
+    }
+    &__supportIdeaBtn:hover {
+        background: #fbce51;
+        border: #fbce51;
+        color: #1f1f1f;
+    }
+
+    &__aboutTournamentBtn {
+        border: 2px solid #1f1f1f;
+        border-radius: 66px;
+        min-width: 263px;
+        height: 72px;
+        background: none;
+        padding: 0 80px;
+        box-sizing: border-box;
+
+        font-family: "Golos Text", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #1f1f1f;
+        white-space: break-spaces;
+
+        transition: all 0.5s ease;
+    }
+    &__aboutTournamentBtn:hover {
+        background: #1f1f1f;
+        color: #fff;
+    }
+}

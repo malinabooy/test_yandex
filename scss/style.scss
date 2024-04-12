@@ -1,0 +1,392 @@
+@import '../scss/components/fonts';
+@import '../scss/vars/var';
+
+
+@import 'heading';
+@import 'runningLine';
+@import 'supportIdea';
+@import 'stagesVasyukovs';
+@import 'participants';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --container-width: 1078px;
+    --container-gap: 72px;
+
+    @media (max-width: 769px) {
+        --container-width: 295px;
+        --container-gap: 20px;
+    }
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-gap) + var(--container-gap));
+    padding-left: var(--container-gap);
+    padding-right: var(--container-gap);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .heading {
+        height: 812px;
+
+        &__content {
+            margin-top: 18px;
+        }
+
+        &__logo {
+            width: 213px;
+        }
+
+        &__titleInHeading {
+            margin-top: 40px;
+            font-size: 36px;
+        }
+
+        &__blockWithBtn {
+            margin-top: 32px;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        &__supportIdeaBtn {
+            height: 47px;
+            padding: 0 43px;
+
+            white-space: nowrap;
+        }
+
+        &__aboutTournamentBtn {
+            height: 47px;
+            padding: 0 81px;
+
+            width: 335px;
+            height: 47px;
+
+            white-space: nowrap;
+
+            border: #fff;
+            background: #fff;
+            opacity: 0.9;
+        }
+    }
+
+    .runningLine {
+        position: absolute;
+
+        bottom: 20px;
+
+        padding: 10px 0;
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .supportIdea {
+        margin: 40px 0 24px;
+
+        &__titleText {
+            font-size: 28px;
+        }
+
+        &__imagePhone {
+            width: 335px;
+
+            margin: 25px 0;
+        }
+
+        &__imageDesktop {
+            display: none;
+        }
+
+        &__blockBottom {
+            flex-direction: column;
+        }
+
+        &__imagePosition {
+            width: 380px;
+            height: 415px;
+
+            --container-gap: 5px;
+            position: relative;
+        }
+
+        &__rightBlock {
+            padding-top: 10px;
+            width: 335px;
+        }
+
+        &__titleText_widthBottom {
+            width: 335px;
+        }
+
+        &__informationTable {
+            margin-top: 44px;
+        }
+
+        &__informationTable tr {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__lineName {
+            padding: 16px 20px 12px 0;
+            border-bottom: none;
+        }
+
+        &__lineName_first {
+            padding: 0 16px 12px 0;
+        }
+
+        &__lineName_last {
+            border-bottom: none;
+        }
+
+        &__lineInformation {
+            padding: 0 0 16px 0;
+            ;
+            border-left: none;
+
+            width: 335px;
+        }
+
+        &__lineInformation_first {
+            padding: 0 0 16px 0;
+        }
+
+        &__lineInformation_last {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+
+        &__linkToAdministration {
+            margin-top: 40px;
+        }
+    }
+
+    .stagesVasyukovs {
+        padding: 120px 0;
+
+        gap: 204px;
+
+        &__mainTitle {
+            font-size: 36px;
+            line-height: 110%;
+        }
+
+        &__futureText {
+            bottom: -57px;
+            left: 0;
+
+            width: 335px;
+            line-height: 120%;
+            font-size: 18px;
+        }
+
+        &__stagesContainer {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        &__stagesGrid {
+            display: flex;
+            gap: 40px;
+
+            transition: all ease 1s;
+        }
+
+        &__stage {
+            gap: 0;
+
+            width: 335px;
+            height: 300px;
+
+            background-image: url(/img/articles/backgroundStagePhone.png);
+            background-size: cover;
+        }
+
+        &__stageGrid_nested {
+            padding-top: 62px;
+
+            flex-direction: column;
+            gap: 28px;
+            background-image: url(/img/articles/backgroundStagePhone.png);
+            background-size: cover;
+        }
+
+        &__stage_nested {
+            background-image: none;
+            height: auto;
+
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        &__stageContent {
+            padding-top: 62px;
+            background-image: none;
+        }
+
+        &__stage:nth-child(1) {
+            grid-column: auto;
+            grid-row: span 2;
+        }
+
+        &__stage:nth-child(2) {
+            grid-row: auto;
+            height: 300px;
+        }
+
+        &__stage:nth-child(3) {
+            grid-column: auto;
+            grid-row: span 2;
+        }
+
+        &__stage:nth-child(4) {
+            height: 300px;
+        }
+
+        &__stage:nth-child(5) {
+            grid-column: span 2;
+            width: 335px;
+            height: 300px;
+        }
+
+        &__textStage {
+            font-size: 18px;
+
+            width: 239px;
+        }
+
+        &__textWeight {
+            width: 243зч;
+        }
+
+        &__sliderContol {
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            gap: 16px;
+
+            margin-top: 28px;
+        }
+
+        &__stageSliderBtn {
+            background-color: #313131;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: #313131;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            transition: all ease 0.6s;
+        }
+
+        &__stageSliderBtn:hover {
+            background-color: #fbce51;
+            border: #fbce51;
+        }
+
+        &__prevBtn {
+            padding-right: 3px;
+        }
+
+        &__nextBtn {
+            padding-left: 3px;
+        }
+        &__prevBtn:disabled {
+            background-color: #d6d6d6;
+        }
+
+        &__nextBtn:disabled {
+            background-color: #d6d6d6;
+        }
+
+        &__sliderIndicators {
+            display: flex;
+            gap: 6px;
+
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &__indicator {
+            width: 10px;
+            height: 10px;
+            background-color: #d9d9d9;
+            margin: 5px 0;
+            border-radius: 50%;
+        }
+
+        &__indicator_active {
+            background-color: #313131;
+
+            transition: all 0.5s ease;
+        }
+
+        //stagesVasyukovs__indicator_active
+
+        &__positionPlaneImage {
+            width: 335px;
+            height: 182px;
+
+            position: absolute;
+            top: -120px;
+            right: -10px;
+
+            rotate: -5deg;
+        }
+    }
+
+    .participants{
+        &__title{
+            font-size: 36px;
+            line-height: 110%;
+        }
+        &__blockBtnAndCounter {
+            position: absolute;
+            bottom: -100px;
+            left: 123px;
+        }
+        &__sliderBtn{
+            width: 36px;
+            height: 36px;
+        }
+        &__sliderBtn svg{
+            width: 10px;
+            height: 18px;
+        }
+        &__sliderPrev {
+            padding-right: 3px;
+        }
+    
+        &__sliderNext {
+            padding-left: 3px;
+        }
+
+        &__slideContainer {
+            width:335px;
+        }
+        &__slideImage {
+            width: 244px;
+            height: 244px;
+        }
+    }
+}
