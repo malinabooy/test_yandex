@@ -7,6 +7,7 @@
 @import 'supportIdea';
 @import 'stagesVasyukovs';
 @import 'participants';
+@import 'runningLineFooter';
 @import 'footer';
 
 * {
@@ -310,6 +311,7 @@
         &__nextBtn {
             padding-left: 3px;
         }
+
         &__prevBtn:disabled {
             background-color: #d6d6d6;
         }
@@ -341,8 +343,6 @@
             transition: all 0.5s ease;
         }
 
-        //stagesVasyukovs__indicator_active
-
         &__positionPlaneImage {
             width: 335px;
             height: 182px;
@@ -355,38 +355,56 @@
         }
     }
 
-    .participants{
-        &__title{
+    .participants {
+        &__title {
             font-size: 36px;
             line-height: 110%;
         }
+
         &__blockBtnAndCounter {
             position: absolute;
             bottom: -100px;
             left: 123px;
         }
-        &__sliderBtn{
+
+        &__sliderBtn {
             width: 36px;
             height: 36px;
         }
-        &__sliderBtn svg{
+
+        &__sliderBtn svg {
             width: 10px;
             height: 18px;
         }
+
         &__sliderPrev {
             padding-right: 3px;
         }
-    
+
         &__sliderNext {
             padding-left: 3px;
         }
 
         &__slideContainer {
-            width:335px;
+            width: 335px;
         }
+
         &__slideImage {
             width: 244px;
             height: 244px;
         }
+    }
+
+    .runningLineFooter {
+        padding: 10px 0;
+
+        &__text {
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        opacity: 1;
+        height: 214px;
     }
 }
