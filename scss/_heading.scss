@@ -66,6 +66,8 @@
         color: #fff;
         white-space: break-spaces;
 
+        cursor: pointer;
+
         transition: all 0.6s ease;
     }
     &__supportIdeaBtn:hover {
@@ -90,6 +92,8 @@
         text-align: center;
         color: #1f1f1f;
         white-space: break-spaces;
+
+        cursor: pointer;
 
         transition: all 0.5s ease;
     }
